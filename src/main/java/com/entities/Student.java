@@ -20,7 +20,7 @@ public class Student {
 	@DBRef
 	private Department department;
 	
-	@DBRef
+	@DBRef(lazy = true)
 	private List<Subject> subjects;
 	
 	@Transient
